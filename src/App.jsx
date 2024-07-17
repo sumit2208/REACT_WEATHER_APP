@@ -75,18 +75,7 @@ function App() {
           
         </>
       )}
-      <h1 className="mx-5" style={{ color: "white" }}>HOURLY FORECAST</h1>
-      <hr style={{ color: "white" }} />
-      {hourlyData && hourlyData.length > 0 && (
-        <div className="hourly-forecast" style={{color:"red"}}>
-          {hourlyData.map((hour, index) => (
-            <div key={index} className="hour">
-              <p>{hour.time}</p>
-              <p>{hour.temp}°C</p>
-            </div>
-          ))}
-        </div>
-      )}
+      
     </div>
   );
 }
