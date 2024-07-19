@@ -14,7 +14,7 @@ function App() {
     setWeatherData(newData);
     if (newData && newData.forecast && newData.forecast.forecastday) {
       setHourlyData(newData.forecast.forecastday[0].hour.map(hour => ({
-        time: hour.time.split(' ')[1], // Extract only the time part
+        time: hour.time.split(' ')[1], 
         temp: hour.temp_c
       })));
     }
