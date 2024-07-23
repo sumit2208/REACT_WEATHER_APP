@@ -41,12 +41,13 @@ export default function Navbar(props) {
   };
 
   return (
-    <nav className="navbar" style={{ backgroundColor: "#191626", padding: "22px", borderBottom: "1px solid white" }}>
+    <nav className="navbar " style={{ backgroundColor: "#191626", padding: "22px", borderBottom: "1px solid white" }}>
       <div className="container-fluid d-flex justify-content-space-around">
         <form className="d-flex" role="search">
           <div>
             <input
-              className="form-control me-2 search ps-3"
+              className="form-control me-2 search ps-3 "
+              style={{borderRadius:"20px"}}
               type="search"
               placeholder="Enter The City Name"
               aria-label="Search"
